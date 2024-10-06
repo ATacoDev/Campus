@@ -1,11 +1,51 @@
+<%- include('partials/header') %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus</title>
+    <title>Dashboard</title>
 </head>
 <body>
-    <h1>Dashboard Page</h1>
+    <header>
+        <h1>Welcome to Campus!</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="dashboard">
+            <div class="dashboard-item check-in-out">
+                <h2>Check In/Out</h2>
+                <p>Manage user check-in and check-out here.</p>
+                <button>Check In</button>
+                <button>Check Out</button>
+            </div>
+
+            <div class="dashboard-item rockwall-tasks">
+                <h2>Rockwall Tasks</h2>
+                <p>View and manage tasks related to the rockwall activities.</p>
+                <button>View Tasks</button>
+                <button>Add Task</button>
+            </div>
+
+            <div class="dashboard-item track-climbs">
+                <h2>Track Climbs</h2>
+                <p>Monitor and track climbing sessions here.</p>
+                <button>View Climbs</button>
+                <button>Add Climb</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Campus 2024</p>
+    </footer>
+    <script src="/script.js"></script>
 </body>
 </html>
+
+<%- include('partials/footer') %>
